@@ -1,0 +1,12 @@
+# Cache files
+**/__pycache__/
+
+
+# Development Environment
+venv/
+.env
+app.db
+
+
+# IDE 
+.idea
