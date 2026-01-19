@@ -5,7 +5,6 @@
 # Development Environment
 venv/
 .env
-app.db
 
 
 # IDE 
