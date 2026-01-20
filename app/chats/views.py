@@ -10,13 +10,17 @@ from app.chats.dependencies import check_id
 router = APIRouter(prefix="/chats")
 
 
-@router.post("", response_model=ChatSchema)
+@router.post("", response_model=ChatSchema, status_code=status.HTTP_201_CREATED)
 async def chat_create(chat_data: ChatCreationSchema):
     title = chat_data.title.strip()
     return await ChatService.create_chat(title=title)
 
 
-@router.post("/{id}/messages", response_model=MessageSchema)
+@router.post(
+    "/{id}/messages",
+    response_model=MessageSchema,
+    status_code=status.HTTP_201_CREATED,
+)
 async def send_message(
     message_data: MessageCreationSchema,
     chat: ChatSchema = Depends(check_id),

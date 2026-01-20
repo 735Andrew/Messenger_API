@@ -1,0 +1,22 @@
+[
+  {
+    "chat_id": 1,
+    "text": "The release has been postponed to next Monday."
+  },
+  {
+    "chat_id": 2,
+    "text": "Backend API for user profiles is ready for QA."
+  },
+  {
+    "chat_id": 2,
+    "text": "Found 3 critical bugs related to notifications. Added them to Jira."
+  },
+  {
+    "chat_id": 2,
+    "text": "Do we still plan to include dark mode in this sprint?"
+  },
+  {
+    "chat_id": 3,
+    "text": "Coffee count today: 4"
+  }
+]
