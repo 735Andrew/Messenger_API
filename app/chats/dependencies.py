@@ -5,6 +5,8 @@ from app.chats.schemas import ChatSchema
 
 
 async def check_id(id: int) -> ChatSchema:
+    """Ensure that the chat exists."""
+
     chat = await ChatService.get_one(id)
 
     if chat is None:
